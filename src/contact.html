@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Adnan Khan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e12;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2rem;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #facc15;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #d1d5db;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    h1, h2 {
+      color: #facc15;
+    }
+
+    .connect-section {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .social-button {
+      padding: 0.7rem 1.2rem;
+      border: 2px solid #facc15;
+      border-radius: 8px;
+      font-weight: 500;
+      color: #facc15;
+      background-color: transparent;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-button:hover {
+      background: #facc15;
+      color: #0e0e12;
+    }
+
+    /* Feedback Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #1a1a22;
+      padding: 2rem;
+      border-radius: 0.75rem;
+    }
+
+    label {
+      font-weight: bold;
+      color: #d1d5db;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #3f3f46;
+      background-color: #2b2b30;
+      color: #e5e7eb;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #facc15;
+    }
+
+    button {
+      padding: 0.8rem 1.4rem;
+      border: none;
+      background-color: #facc15;
+      color: #0e0e12;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #eab308;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">A</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Connect Section -->
+    <section class="connect-section">
+      <h1>Let's Connect<span class="dot">.</span></h1>
+      <p>You can reach out via email or connect through socials below:</p>
+      <div class="social-links">
+        <a href="mailto:adnankhan123312@gmail.com" class="social-button">Email</a>
+        <a href="https://www.linkedin.com/in/khan-adnan-56a0651b0/" target="_blank" class="social-button">LinkedIn</a>
+        <a href="https://www.instagram.com/iamadnan__/" target="_blank" class="social-button">Instagram</a>
+      </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+      <h2>Send Me Feedback</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your thoughts..." required></textarea>
+        </div>
+        <button type="submit">Send Feedback</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Adnan Khan</p>
+    </footer>
+  </div>
+</body>
+</html>
